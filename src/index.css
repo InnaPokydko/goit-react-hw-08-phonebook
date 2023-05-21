@@ -14,8 +14,8 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-
-  background-image: url( https://img.freepik.com/vecteurs-libre/fond-geometrique-degrade_23-2149337509.jpg);
+  /* background-image: linear-gradient(to top, #fdcbf1 0%, #fdcbf1 1%, #e6dee9 100%); */
+  background-image: url( 'https://img.freepik.com/premium-photo/gypsophilia-branch-with-blue-flowers-blue-background-top-view_116441-25511.jpg');
   background-size: cover;
   background-position: center ;
   background-repeat: no-repeat;
