@@ -2,7 +2,7 @@ import styled from '@emotion/styled';
 
 export const Container = styled.div`
   min-height: 100vh;
-
+  width: 600px;
   background-repeat: no-repeat;
   background-position: left;
   background-size: cover;
@@ -19,7 +19,7 @@ export const Wrapp = styled.div`
   margin-top: 20px;
   margin-left: 0px;
   padding: 0px;
-  min-width: 400px;
+  width: 600px;
   text-align: center;
 `;
 

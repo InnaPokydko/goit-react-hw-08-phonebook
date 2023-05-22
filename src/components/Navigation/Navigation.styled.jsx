@@ -2,6 +2,7 @@ import { NavLink } from 'react-router-dom';
 import styled from '@emotion/styled';
 
 export const NavLinkStyles = styled(NavLink)`
+
   padding: 8px 5px;
   cursor: pointer;
   border-radius: 4px;
