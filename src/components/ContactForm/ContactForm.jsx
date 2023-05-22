@@ -1,4 +1,4 @@
-import PropTypes from 'prop-types';
+// import PropTypes from 'prop-types';
 import { useDispatch, useSelector } from 'react-redux';
 import { addContact } from 'redux/operations';
 import { Formik } from 'formik';
@@ -13,17 +13,17 @@ import {
 } from './ContactForm.styled';
 
 const nameRegExp = /^[a-zA-Zа-яА-Я]+(([' -][a-zA-Zа-яА-Я ])?[a-zA-Zа-яА-Я]*)*$/;
-const phoneRegExp =
+const  numberRegExp =
   /\+?\d{1,4}?[-.\s]?\(?\d{1,3}?\)?[-.\s]?\d{1,4}[-.\s]?\d{1,4}[-.\s]?\d{1,9}/;
 
 const validationSchema = Yup.object().shape({
   name: Yup.string().min(3).matches(nameRegExp, 'Enter valid name').required(),
-  phone: Yup.string().matches(phoneRegExp, 'Enter valid phone').required(),
+  number: Yup.string().matches( numberRegExp, 'Enter valid  number').required(),
 });
 
 const initialValues = {
   name: '',
-  phone: '',
+  number: '',
 };
 
 const ContactForm = () => {
@@ -31,7 +31,7 @@ const ContactForm = () => {
   const contacts = useSelector(getContacts);
 
   const handleSubmit = (values, { resetForm }) => {
-    const { name, phone } = values;
+    const { name, number } = values;
     const isContactExist = contacts.some(
       contact => contact.name.toLowerCase() === name.toLowerCase()
     );
@@ -42,7 +42,7 @@ const ContactForm = () => {
       return;
     }
 
-    dispatch(addContact({ name: name, phone: phone }));
+    dispatch(addContact({ name: name, number: number }));
     resetForm();
   };
 
@@ -63,16 +63,16 @@ const ContactForm = () => {
           />
           <ErrorMess name="name" component={ErrorMess} />
         </Label>
-        <Label htmlFor="phone">
+        <Label htmlFor="number">
           Number
           <Input
             type="tel"
-            name="phone"
+            name="number"
             title="Phone number must be digits and can contain spaces, dashes, parentheses and can start with +"
             required
           />
         </Label>
-        <ErrorMess name="phone" component="div" />
+        <ErrorMess name="number" component="div" />
         <BtnForm type="submit">Add contact</BtnForm>
       </FormBox>
     </Formik>
@@ -81,6 +81,6 @@ const ContactForm = () => {
 
 export default ContactForm;
 
-ContactForm.propTypes = {
-  onSubmit: PropTypes.func,
-};
+// ContactForm.propTypes = {
+//   onSubmit: PropTypes.func,
+// };

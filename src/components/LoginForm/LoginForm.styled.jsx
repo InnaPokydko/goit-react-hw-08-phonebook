@@ -53,6 +53,7 @@ export const BtnForm = styled.button`
   border: none;
   border-radius: 10px;
   background-color: #DB7093;
+  background-font-size: 16px;
   font-size: 16px;
   cursor: pointer;
   box-shadow: 4px 4px 6px 0px rgba(66, 68, 90, 1);

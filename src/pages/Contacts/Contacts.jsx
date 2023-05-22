@@ -6,6 +6,7 @@ import ContactList from 'components/ContactList/ContactList';
 import Filter from 'components/Filter/Filter';
 import ContactForm from 'components/ContactForm/ContactForm';
 import { getIsLoading, getError } from 'redux/selectors';
+import { Container, Title, SecondTitle } from './Contacts.styled';
 
 const Contacts = () => {
   const dispatch = useDispatch();
@@ -17,14 +18,14 @@ const Contacts = () => {
   }, [dispatch]);
 
   return (
-    <div>
-      <h1>Your phonebook</h1>
+    <Container>
+      <Title>Your phonebook</Title>
       <ContactForm />
-      <h2>Contacts</h2>
+      <SecondTitle>Contacts</SecondTitle>
       <Filter />
       {isLoading && !error && <Loader />}
       <ContactList />
-    </div>
+    </Container>
   );
 };
 

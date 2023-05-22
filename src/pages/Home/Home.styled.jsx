@@ -6,12 +6,12 @@ export const Container = styled.div`
   background-repeat: no-repeat;
   background-position: left;
   background-size: cover;
-  background-image: linear-gradient(
-    90deg,
-    rgba(122, 182, 191, 0.6167060574229692) 0%,
-    rgba(20, 67, 152, 0.03687412464985995) 35%,
-    rgba(243, 132, 140, 0.6223082983193278) 100%
-  );
+  // background-image: linear-gradient(
+  //   90deg,
+  //   rgba(122, 182, 191, 0.6167060574229692) 0%,
+  //   rgba(20, 67, 152, 0.03687412464985995) 35%,
+  //   rgba(243, 132, 140, 0.6223082983193278) 100%
+  // );
   // url('https://img.freepik.com/premium-photo/3d-social-media-account-management-background-rendered_18199-179.jpg');
 `;
 
