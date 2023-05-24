@@ -5,8 +5,8 @@ export const FormBox = styled(Form)`
   display: flex;
   justify-content: space-around;
   width: 350px;
+  margin: 20px;
   padding: 40px;
-  margin-bottom: 15px;
   border-radius: 10px;
   flex-direction: column;
   gap: 15px;
@@ -49,11 +49,12 @@ color: #fff;
 text-transform: capitalize;
 border: none;
 border-radius: 10px;
-background-color: #50C9C3;
+background-color: #0072ff;
 font-size: 16px;
 cursor: pointer;
 box-shadow: 4px 4px 6px 0px rgba(66, 68, 90, 1);
 
 &:hover {
-  background-image: linear-gradient(to right, #50C9C3 0%, #96DEDA 51%, #50C9C3 100%);
-}`;
+  background-image: linear-gradient(to right, #00d2ff 0%, #3a7bd5 51%, #00d2ff 100%);
+}
+`;

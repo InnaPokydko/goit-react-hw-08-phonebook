@@ -1,14 +1,15 @@
 import styled from '@emotion/styled';
 
 export const Container = styled.div`
-  width: 600px;
+  width: 800px;
   display: flex;
+  margin: 20px;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 35px;
   padding: 50px;
-//   background-image: linear-gradient(to top, #00c6fb 0%, #005bea 100%);
+  background-image: linear-gradient(to top, #00c6fb 0%, #005bea 100%);
 `;
 
 export const Title = styled.h1`

@@ -10,7 +10,7 @@ export const Wrapper = styled.div`
   font-family: 'Roboto Slab';
   font-size: 28px;
     font-weight: 500;
-    color: #005bea;`;
+    color: #f5f5f5;`;
   
     export const LogoutBtn = styled.button`
     padding: 8px;

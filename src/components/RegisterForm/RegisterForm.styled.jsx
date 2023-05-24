@@ -1,14 +1,12 @@
 import styled from '@emotion/styled';
 
 export const RegisterBox = styled.div`
-min-height: 100vh;
-width: 600px;
-// background: linear-gradient(
-//   172deg,
-//   rgba(122, 182, 191, 0.24135591736694673) 0%,
-//   rgba(20, 67, 152, 0.03687412464985995) 35%,
-//   rgba(243, 132, 140, 0.28617384453781514) 100%
-// );
+min-height: 500px;
+display: flex;
+justify-content: center;
+  margin: 40px;
+width: 800px;
+background-image: linear-gradient(to top, #00c6fb 0%, #005bea 100%);
 `;
 
 export const Form = styled.form`
@@ -17,12 +15,13 @@ flex-direction: column;
 justify-content: space-around;
 align-items: center;
 width: 300px;
+height: 200px;
 padding: 30px;
-margin: 20px;
+margin: 60px;
 border-radius: 10px;
 gap: 15px;
 font-size: 16px;
-background: inherit;
+background: #cfd9df;
   box-shadow: 4px 4px 6px 0px rgba(66, 68, 90, 1);
 `;
 
@@ -53,11 +52,12 @@ export const BtnForm = styled.button`
   text-transform: capitalize;
   border: none;
   border-radius: 10px;
-  background-color: #DB7093;
+  background-color: #0072ff;
+  background-font-size: 16px;
   font-size: 16px;
   cursor: pointer;
   box-shadow: 4px 4px 6px 0px rgba(66, 68, 90, 1);
 
   &:hover {
-    background-image: linear-gradient(to right, #ddd6f3 0%, #faaca8 51%, #ddd6f3 100%);
+    background-image: linear-gradient(to right, #00d2ff 0%, #3a7bd5 51%, #00d2ff 100%);
   }`;
